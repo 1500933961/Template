@@ -1,0 +1,2965 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ×Óºã Çñ, NULL, LIC=47GU5-G02GN-CXRU6-DM5I6-BLK2X-J4CUR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Program Files\KEIL\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\study\projects\nucleo-64\Template\User\template.uvprojx
+Project File Date:  09/18/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Program Files\KEIL\ARM\ARMCLANG\Bin'
+Build target 'Template'
+main.c(28): error: 'main.h' file not found
+#include "main.h"
+         ^~~~~~~~
+1 error generated.
+compiling main.c...
+stm32f4xx_it.c(31): warning: In file included from...
+../User/stm32f4xx_it.h(37): warning: In file included from...
+../User/stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+stm32f4xx_it.c(31): warning: In file included from...
+../User/stm32f4xx_it.h(37): warning: In file included from...
+../User/stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+stm32f4xx_it.c(31): warning: In file included from...
+../User/stm32f4xx_it.h(37): warning: In file included from...
+../User/stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+stm32f4xx_it.c(32): error: 'main.h' file not found
+#include "main.h"
+         ^~~~~~~~
+5 warnings and 2 errors generated.
+compiling stm32f4xx_it.c...
+system_stm32f4xx.c(262): warning: In file included from...
+../User/stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+system_stm32f4xx.c(262): warning: In file included from...
+../User/stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+system_stm32f4xx.c(262): warning: In file included from...
+../User/stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+system_stm32f4xx.c(386): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+system_stm32f4xx.c(386): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+system_stm32f4xx.c(657): warning: while loop has empty body [-Wempty-body]
+    while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
+                                                                     ^
+system_stm32f4xx.c(657): note: put the semicolon on a separate line to silence this warning
+7 warnings and 1 error generated.
+compiling system_stm32f4xx.c...
+../FWLIB/src/misc.c(76): warning: In file included from...
+../FWLIB/inc\misc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/misc.c(76): warning: In file included from...
+../FWLIB/inc\misc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/misc.c(76): warning: In file included from...
+../FWLIB/inc\misc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/misc.c(121): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_NVIC_PRIORITY_GROUP(NVIC_PriorityGroup));
+  ^
+../FWLIB/src/misc.c(141): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NVIC_InitStruct->NVIC_IRQChannelCmd));
+  ^
+../FWLIB/src/misc.c(152): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    tmppriority = NVIC_InitStruct->NVIC_IRQChannelPreemptionPriority << tmppre;
+                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+../FWLIB/src/misc.c(155): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    tmppriority = tmppriority << 0x04;
+                ~ ~~~~~~~~~~~~^~~~~~~
+../FWLIB/src/misc.c(183): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
+  ^
+../FWLIB/src/misc.c(202): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_NVIC_LP(LowPowerMode));
+  ^
+../FWLIB/src/misc.c(226): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SYSTICK_CLK_SOURCE(SysTick_CLKSource));
+  ^
+12 warnings and 1 error generated.
+compiling misc.c...
+../FWLIB/src/stm32f4xx_crc.c(29): warning: In file included from...
+../FWLIB/inc\stm32f4xx_crc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_crc.c(29): warning: In file included from...
+../FWLIB/inc\stm32f4xx_crc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_crc.c(29): warning: In file included from...
+../FWLIB/inc\stm32f4xx_crc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+5 warnings and 1 error generated.
+compiling stm32f4xx_crc.c...
+../FWLIB/src/stm32f4xx_cryp_des.c(48): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_cryp_des.c(48): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_cryp_des.c(48): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+5 warnings and 1 error generated.
+compiling stm32f4xx_cryp_des.c...
+../FWLIB/src/stm32f4xx_cryp_tdes.c(48): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_cryp_tdes.c(48): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_cryp_tdes.c(48): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+5 warnings and 1 error generated.
+compiling stm32f4xx_cryp_tdes.c...
+../FWLIB/src/stm32f4xx_can.c(84): warning: In file included from...
+../FWLIB/inc\stm32f4xx_can.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_can.c(84): warning: In file included from...
+../FWLIB/inc\stm32f4xx_can.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_can.c(84): warning: In file included from...
+../FWLIB/inc\stm32f4xx_can.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_can.c(169): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(201): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(337): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_FILTER_NUMBER(CAN_FilterInitStruct->CAN_FilterNumber));
+  ^
+../FWLIB/src/stm32f4xx_can.c(470): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_BANKNUMBER(CAN_BankNumber));
+  ^
+../FWLIB/src/stm32f4xx_can.c(495): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(525): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(580): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(653): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(705): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(752): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(801): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(825): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(879): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(957): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(983): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(1044): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(1069): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(1089): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(1292): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(1334): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(1433): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(1493): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+../FWLIB/src/stm32f4xx_can.c(1596): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CAN_ALL_PERIPH(CANx));
+  ^
+28 warnings and 1 error generated.
+compiling stm32f4xx_can.c...
+../FWLIB/src/stm32f4xx_cryp.c(164): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_cryp.c(164): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_cryp.c(164): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_cryp.c(238): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CRYP_ALGOMODE(CRYP_InitStruct->CRYP_AlgoMode));
+  ^
+../FWLIB/src/stm32f4xx_cryp.c(370): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CRYP_PHASE(CRYP_Phase));
+  ^
+../FWLIB/src/stm32f4xx_cryp.c(406): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_cryp.c(684): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CRYP_DMAREQ(CRYP_DMAReq));
+  ^
+../FWLIB/src/stm32f4xx_cryp.c(802): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CRYP_CONFIG_IT(CRYP_IT));
+  ^
+../FWLIB/src/stm32f4xx_cryp.c(831): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CRYP_GET_IT(CRYP_IT));
+  ^
+../FWLIB/src/stm32f4xx_cryp.c(889): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_CRYP_GET_FLAG(CRYP_FLAG));
+  ^
+12 warnings and 1 error generated.
+compiling stm32f4xx_cryp.c...
+../FWLIB/src/stm32f4xx_adc.c(106): warning: In file included from...
+../FWLIB/inc\stm32f4xx_adc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_adc.c(106): warning: In file included from...
+../FWLIB/inc\stm32f4xx_adc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_adc.c(106): warning: In file included from...
+../FWLIB/inc\stm32f4xx_adc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_adc.c(240): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(345): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_MODE(ADC_CommonInitStruct->ADC_Mode));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(402): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(459): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(488): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(529): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(592): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(618): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(719): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(838): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(853): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(882): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(907): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(936): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(965): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(988): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1055): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1079): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1106): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1194): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1258): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1292): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1330): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1364): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1384): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1398): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1426): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1452): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1482): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1588): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1625): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1659): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1683): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+../FWLIB/src/stm32f4xx_adc.c(1722): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_ADC_ALL_PERIPH(ADCx));
+  ^
+39 warnings and 1 error generated.
+compiling stm32f4xx_adc.c...
+../FWLIB/src/stm32f4xx_cryp_aes.c(55): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_cryp_aes.c(55): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_cryp_aes.c(55): warning: In file included from...
+../FWLIB/inc\stm32f4xx_cryp.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_cryp_aes.c(910): warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+    CRYP_DataIn(__REV(headerlength));
+                ~~~~~ ^~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_cryp_aes.c(912): warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+    CRYP_DataIn(__REV(inputlength));
+                ~~~~~ ^~~~~~~~~~~
+../FWLIB/src/stm32f4xx_cryp_aes.c(1087): warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+    CRYP_DataIn(__REV(headerlength));
+                ~~~~~ ^~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_cryp_aes.c(1089): warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+    CRYP_DataIn(__REV(inputlength));
+                ~~~~~ ^~~~~~~~~~~
+../FWLIB/src/stm32f4xx_cryp_aes.c(1178): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+      HBuffer[bufferidx++] = headersize & 0xff000000;
+                           ~ ~~~~~~~~~~~^~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_cryp_aes.c(1179): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+      HBuffer[bufferidx++] = headersize & 0x00ff0000;
+                           ~ ~~~~~~~~~~~^~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_cryp_aes.c(1180): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+      HBuffer[bufferidx++] = headersize & 0x0000ff00;
+                           ~ ~~~~~~~~~~~^~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_cryp_aes.c(1209): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  blockb0[0] |= 0u | (((( (uint8_t) TAGSize - 2) / 2) & 0x07 ) << 3 ) | ( ( (uint8_t) (15 - NonceSize) - 1) & 0x07);
+                   ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+13 warnings and 1 error generated.
+compiling stm32f4xx_cryp_aes.c...
+../FWLIB/src/stm32f4xx_dac.c(131): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dac.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dac.c(131): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dac.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_dac.c(131): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dac.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dac.c(211): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_TRIGGER(DAC_InitStruct->DAC_Trigger));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(269): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(297): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(321): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(352): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(383): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_ALIGN(DAC_Align));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(408): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_ALIGN(DAC_Align));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(436): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_ALIGN(DAC_Align));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(470): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(513): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(561): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(594): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(628): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(654): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+../FWLIB/src/stm32f4xx_dac.c(691): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DAC_CHANNEL(DAC_Channel));
+  ^
+20 warnings and 1 error generated.
+compiling stm32f4xx_dac.c...
+../FWLIB/src/stm32f4xx_dbgmcu.c(29): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dbgmcu.h(37): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dbgmcu.c(29): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dbgmcu.h(37): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_dbgmcu.c(29): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dbgmcu.h(37): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dbgmcu.c(87): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DBGMCU_PERIPH(DBGMCU_Periph));
+  ^
+../FWLIB/src/stm32f4xx_dbgmcu.c(126): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DBGMCU_APB1PERIPH(DBGMCU_Periph));
+  ^
+../FWLIB/src/stm32f4xx_dbgmcu.c(155): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DBGMCU_APB2PERIPH(DBGMCU_Periph));
+  ^
+8 warnings and 1 error generated.
+compiling stm32f4xx_dbgmcu.c...
+../FWLIB/src/stm32f4xx_dcmi.c(86): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dcmi.h(37): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dcmi.c(86): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dcmi.h(37): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_dcmi.c(86): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dcmi.h(37): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dcmi.c(148): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DCMI_CAPTURE_MODE(DCMI_InitStruct->DCMI_CaptureMode));
+  ^
+../FWLIB/src/stm32f4xx_dcmi.c(226): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_dcmi.c(264): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_dcmi.c(302): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_dcmi.c(325): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_dcmi.c(380): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DCMI_CONFIG_IT(DCMI_IT));
+  ^
+../FWLIB/src/stm32f4xx_dcmi.c(420): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DCMI_GET_FLAG(DCMI_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_dcmi.c(464): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DCMI_CLEAR_FLAG(DCMI_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_dcmi.c(489): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DCMI_GET_IT(DCMI_IT));
+  ^
+14 warnings and 1 error generated.
+compiling stm32f4xx_dcmi.c...
+../FWLIB/src/stm32f4xx_dma.c(124): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dma.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dma.c(124): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dma.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_dma.c(124): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dma.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dma.c(199): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(324): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(481): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(517): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(553): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(635): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(650): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(734): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(764): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(806): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(833): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(948): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(982): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(1011): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(1076): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(1121): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(1177): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+../FWLIB/src/stm32f4xx_dma.c(1257): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA_ALL_PERIPH(DMAy_Streamx));
+  ^
+23 warnings and 1 error generated.
+compiling stm32f4xx_dma.c...
+../FWLIB/src/stm32f4xx_dma2d.c(58): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dma2d.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dma2d.c(58): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dma2d.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_dma2d.c(58): warning: In file included from...
+../FWLIB/inc\stm32f4xx_dma2d.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_dma2d.c(137): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_MODE(DMA2D_InitStruct->DMA2D_Mode));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(276): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(308): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_FGO(DMA2D_FG_InitStruct->DMA2D_FGO));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(405): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_BGO(DMA2D_BG_InitStruct->DMA2D_BGO));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(494): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(518): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(543): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_DEAD_TIME(DMA2D_DeadTime));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(568): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_LineWatermark(DMA2D_LWatermarkConfig));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(635): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_IT(DMA2D_IT));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(668): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_GET_FLAG(DMA2D_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(700): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_GET_FLAG(DMA2D_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(724): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_IT(DMA2D_IT));
+  ^
+../FWLIB/src/stm32f4xx_dma2d.c(761): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_DMA2D_IT(DMA2D_IT));
+  ^
+18 warnings and 1 error generated.
+compiling stm32f4xx_dma2d.c...
+../FWLIB/src/stm32f4xx_exti.c(67): warning: In file included from...
+../FWLIB/inc\stm32f4xx_exti.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_exti.c(67): warning: In file included from...
+../FWLIB/inc\stm32f4xx_exti.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_exti.c(67): warning: In file included from...
+../FWLIB/inc\stm32f4xx_exti.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_exti.c(130): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_EXTI_MODE(EXTI_InitStruct->EXTI_Mode));
+  ^
+../FWLIB/src/stm32f4xx_exti.c(199): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_EXTI_LINE(EXTI_Line));
+  ^
+../FWLIB/src/stm32f4xx_exti.c(230): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+  ^
+../FWLIB/src/stm32f4xx_exti.c(252): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_EXTI_LINE(EXTI_Line));
+  ^
+../FWLIB/src/stm32f4xx_exti.c(267): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GET_EXTI_LINE(EXTI_Line));
+  ^
+../FWLIB/src/stm32f4xx_exti.c(290): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_EXTI_LINE(EXTI_Line));
+  ^
+11 warnings and 1 error generated.
+compiling stm32f4xx_exti.c...
+../FWLIB/src/stm32f4xx_flash.c(72): warning: In file included from...
+../FWLIB/inc\stm32f4xx_flash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_flash.c(72): warning: In file included from...
+../FWLIB/inc\stm32f4xx_flash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_flash.c(72): warning: In file included from...
+../FWLIB/inc\stm32f4xx_flash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_flash.c(280): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_LATENCY(FLASH_Latency));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(295): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(317): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(338): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(475): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_SECTOR(FLASH_Sector));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(544): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_VOLTAGERANGE(VoltageRange));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(625): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_VOLTAGERANGE(VoltageRange));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(692): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_VOLTAGERANGE(VoltageRange));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(747): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_ADDRESS(Address));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(790): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_ADDRESS(Address));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(832): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_ADDRESS(Address));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(874): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_ADDRESS(Address));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1011): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_WRP(OB_WRP));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1053): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_WRP(OB_WRP));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1103): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_PCROP_SELECT(OB_PcROP));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1133): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_PCROP(OB_PCROP));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1170): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_PCROP(OB_PCROP));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1206): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_RDP(OB_RDP));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1239): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_IWDG_SOURCE(OB_IWDG));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1277): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_BOOT(OB_BOOT));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1298): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_OB_BOR(OB_BOR));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1453): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_IT(FLASH_IT)); 
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1486): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_GET_FLAG(FLASH_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_flash.c(1516): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FLASH_CLEAR_FLAG(FLASH_FLAG));
+  ^
+29 warnings and 1 error generated.
+compiling stm32f4xx_flash.c...
+../FWLIB/src/stm32f4xx_flash_ramfunc.c(58): warning: In file included from...
+../FWLIB/inc\stm32f4xx_flash_ramfunc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_flash_ramfunc.c(58): warning: In file included from...
+../FWLIB/inc\stm32f4xx_flash_ramfunc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_flash_ramfunc.c(58): warning: In file included from...
+../FWLIB/inc\stm32f4xx_flash_ramfunc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+5 warnings and 1 error generated.
+compiling stm32f4xx_flash_ramfunc.c...
+../FWLIB/src/stm32f4xx_fsmc.c(35): warning: In file included from...
+../FWLIB/inc\stm32f4xx_fsmc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_fsmc.c(35): warning: In file included from...
+../FWLIB/inc\stm32f4xx_fsmc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_fsmc.c(35): warning: In file included from...
+../FWLIB/inc\stm32f4xx_fsmc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_fsmc.c(48): warning: no previous extern declaration for non-static variable 'FSMC_DefaultTimingStruct' [-Wmissing-variable-declarations]
+const FSMC_NORSRAMTimingInitTypeDef FSMC_DefaultTimingStruct = {0x0F, /* FSMC_AddressSetupTime */
+                                    ^
+../FWLIB/src/stm32f4xx_fsmc.c(48): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const FSMC_NORSRAMTimingInitTypeDef FSMC_DefaultTimingStruct = {0x0F, /* FSMC_AddressSetupTime */
+      ^
+../FWLIB/src/stm32f4xx_fsmc.c(132): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NORSRAM_BANK(FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(159): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NORSRAM_BANK(FSMC_NORSRAMInitStruct->FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(254): warning: cast from 'const FSMC_NORSRAMTimingInitTypeDef *' to 'FSMC_NORSRAMTimingInitTypeDef *' drops const qualifier [-Wcast-qual]
+  FSMC_NORSRAMInitStruct->FSMC_ReadWriteTimingStruct = (FSMC_NORSRAMTimingInitTypeDef*)&FSMC_DefaultTimingStruct;
+                                                                                       ^
+../FWLIB/src/stm32f4xx_fsmc.c(255): warning: cast from 'const FSMC_NORSRAMTimingInitTypeDef *' to 'FSMC_NORSRAMTimingInitTypeDef *' drops const qualifier [-Wcast-qual]
+  FSMC_NORSRAMInitStruct->FSMC_WriteTimingStruct = (FSMC_NORSRAMTimingInitTypeDef*)&FSMC_DefaultTimingStruct;
+                                                                                   ^
+../FWLIB/src/stm32f4xx_fsmc.c(271): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NORSRAM_BANK(FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(345): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(378): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param( IS_FSMC_NAND_BANK(FSMC_NANDInitStruct->FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(469): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(509): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_NAND_BANK(FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(630): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_WAIT_FEATURE(FSMC_PCCARDInitStruct->FSMC_Waitfeature));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(707): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(754): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(818): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_GETFLAG_BANK(FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(865): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_GETFLAG_BANK(FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(903): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+  ^
+../FWLIB/src/stm32f4xx_fsmc.c(951): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FSMC_IT_BANK(FSMC_Bank));
+  ^
+22 warnings and 1 error generated.
+compiling stm32f4xx_fsmc.c...
+../FWLIB/src/stm32f4xx_gpio.c(84): warning: In file included from...
+../FWLIB/inc\stm32f4xx_gpio.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_gpio.c(84): warning: In file included from...
+../FWLIB/inc\stm32f4xx_gpio.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_gpio.c(84): warning: In file included from...
+../FWLIB/inc\stm32f4xx_gpio.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_gpio.c(130): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(207): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(282): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(328): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(352): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(371): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(395): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(415): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(436): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(458): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(483): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(499): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+../FWLIB/src/stm32f4xx_gpio.c(585): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+  ^
+18 warnings and 1 error generated.
+compiling stm32f4xx_gpio.c...
+../FWLIB/src/stm32f4xx_hash.c(123): warning: In file included from...
+../FWLIB/inc\stm32f4xx_hash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_hash.c(123): warning: In file included from...
+../FWLIB/inc\stm32f4xx_hash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_hash.c(123): warning: In file included from...
+../FWLIB/inc\stm32f4xx_hash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_hash.c(194): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_HASH_ALGOSELECTION(HASH_InitStruct->HASH_AlgoSelection));
+  ^
+../FWLIB/src/stm32f4xx_hash.c(294): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_HASH_VALIDBITSNUMBER(ValidNumber));
+  ^
+../FWLIB/src/stm32f4xx_hash.c(468): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_hash.c(492): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_hash.c(584): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_HASH_IT(HASH_IT));
+  ^
+../FWLIB/src/stm32f4xx_hash.c(616): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_HASH_GET_FLAG(HASH_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_hash.c(654): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_HASH_CLEAR_FLAG(HASH_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_hash.c(673): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_HASH_GET_IT(HASH_IT));  
+  ^
+../FWLIB/src/stm32f4xx_hash.c(704): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_HASH_IT(HASH_IT));
+  ^
+14 warnings and 1 error generated.
+compiling stm32f4xx_hash.c...
+../FWLIB/src/stm32f4xx_hash_md5.c(47): warning: In file included from...
+../FWLIB/inc\stm32f4xx_hash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_hash_md5.c(47): warning: In file included from...
+../FWLIB/inc\stm32f4xx_hash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_hash_md5.c(47): warning: In file included from...
+../FWLIB/inc\stm32f4xx_hash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+5 warnings and 1 error generated.
+compiling stm32f4xx_hash_md5.c...
+../FWLIB/src/stm32f4xx_hash_sha1.c(47): warning: In file included from...
+../FWLIB/inc\stm32f4xx_hash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_hash_sha1.c(47): warning: In file included from...
+../FWLIB/inc\stm32f4xx_hash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_hash_sha1.c(47): warning: In file included from...
+../FWLIB/inc\stm32f4xx_hash.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+5 warnings and 1 error generated.
+compiling stm32f4xx_hash_sha1.c...
+../FWLIB/src/stm32f4xx_i2c.c(92): warning: In file included from...
+../FWLIB/inc\stm32f4xx_i2c.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_i2c.c(92): warning: In file included from...
+../FWLIB/inc\stm32f4xx_i2c.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_i2c.c(92): warning: In file included from...
+../FWLIB/inc\stm32f4xx_i2c.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_i2c.c(140): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(187): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(316): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(345): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(376): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(402): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(426): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(454): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(481): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(506): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(531): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(555): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(581): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(605): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(631): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(669): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(697): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(721): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(759): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(772): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(803): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(834): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(858): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(880): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(913): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(937): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(1077): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(1102): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(1165): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(1212): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(1267): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(1342): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(1378): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+../FWLIB/src/stm32f4xx_i2c.c(1436): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2C_ALL_PERIPH(I2Cx));
+  ^
+39 warnings and 1 error generated.
+compiling stm32f4xx_i2c.c...
+../FWLIB/src/stm32f4xx_iwdg.c(85): warning: In file included from...
+../FWLIB/inc\stm32f4xx_iwdg.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_iwdg.c(85): warning: In file included from...
+../FWLIB/inc\stm32f4xx_iwdg.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_iwdg.c(85): warning: In file included from...
+../FWLIB/inc\stm32f4xx_iwdg.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_iwdg.c(135): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_IWDG_WRITE_ACCESS(IWDG_WriteAccess));
+  ^
+../FWLIB/src/stm32f4xx_iwdg.c(155): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_IWDG_PRESCALER(IWDG_Prescaler));
+  ^
+../FWLIB/src/stm32f4xx_iwdg.c(168): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_IWDG_RELOAD(Reload));
+  ^
+../FWLIB/src/stm32f4xx_iwdg.c(237): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_IWDG_FLAG(IWDG_FLAG));
+  ^
+9 warnings and 1 error generated.
+compiling stm32f4xx_iwdg.c...
+../FWLIB/src/stm32f4xx_ltdc.c(76): warning: In file included from...
+../FWLIB/inc\stm32f4xx_ltdc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_ltdc.c(76): warning: In file included from...
+../FWLIB/inc\stm32f4xx_ltdc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_ltdc.c(76): warning: In file included from...
+../FWLIB/inc\stm32f4xx_ltdc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_ltdc.c(156): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_HSYNC(LTDC_InitStruct->LTDC_HorizontalSync));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(241): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(265): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(323): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_LIPOS(LTDC_LIPositionConfig));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(341): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_RELOAD(LTDC_Reload));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(370): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_Pixelformat(LTDC_Layer_InitStruct->LTDC_PixelFormat));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(489): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(552): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_GET_CD(LTDC_CD));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(580): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(634): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(667): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_CLUTWR(LTDC_CLUT_InitStruct->LTDC_CLUTAdress));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(978): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_IT(LTDC_IT));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(1006): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_FLAG(LTDC_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(1032): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_FLAG(LTDC_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(1053): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_IT(LTDC_IT));
+  ^
+../FWLIB/src/stm32f4xx_ltdc.c(1089): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_LTDC_IT(LTDC_IT));
+  ^
+21 warnings and 1 error generated.
+compiling stm32f4xx_ltdc.c...
+../FWLIB/src/stm32f4xx_pwr.c(38): warning: In file included from...
+../FWLIB/inc\stm32f4xx_pwr.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_pwr.c(38): warning: In file included from...
+../FWLIB/inc\stm32f4xx_pwr.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_pwr.c(38): warning: In file included from...
+../FWLIB/inc\stm32f4xx_pwr.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_pwr.c(160): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(210): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_PVD_LEVEL(PWR_PVDLevel));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(233): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(267): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(364): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(388): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_REGULATOR_VOLTAGE(PWR_Regulator_Voltage));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(421): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(439): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(466): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(492): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(516): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(558): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(706): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_REGULATOR(PWR_Regulator));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(770): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_REGULATOR_UNDERDRIVE(PWR_Regulator));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(879): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_GET_FLAG(PWR_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_pwr.c(905): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_PWR_CLEAR_FLAG(PWR_FLAG));
+  ^
+21 warnings and 1 error generated.
+compiling stm32f4xx_pwr.c...
+../FWLIB/src/stm32f4xx_rcc.c(59): warning: In file included from...
+../FWLIB/inc\stm32f4xx_rcc.h(37): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_rcc.c(59): warning: In file included from...
+../FWLIB/inc\stm32f4xx_rcc.h(37): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_rcc.c(59): warning: In file included from...
+../FWLIB/inc\stm32f4xx_rcc.h(37): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_rcc.c(266): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_HSE(RCC_HSE));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(322): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_CALIBRATION_VALUE(HSICalibrationValue));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(357): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(382): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_LSE(RCC_LSE));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(422): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(465): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PLL_SOURCE(RCC_PLLSource));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(488): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(518): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PLLI2SN_VALUE(PLLI2SN));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(609): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(638): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PLLSAIN_VALUE(PLLSAIN));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(656): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(674): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(701): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_MCO1SOURCE(RCC_MCO1Source));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(739): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_MCO2SOURCE(RCC_MCO2Source));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(934): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_SYSCLK_SOURCE(RCC_SYSCLKSource));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(987): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_HCLK(RCC_SYSCLK));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1019): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PCLK(RCC_HCLK));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1050): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PCLK(RCC_HCLK));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1227): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_RTCCLK_SOURCE(RCC_RTCCLKSource));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1257): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1274): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1291): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_I2SCLK_SOURCE(RCC_I2SCLKSource));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1314): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PLLI2S_DIVQ_VALUE(RCC_PLLI2SDivQ));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1346): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PLLSAI_DIVQ_VALUE(RCC_PLLSAIDivQ));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1382): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_SAIACLK_SOURCE(RCC_SAIBlockACLKSource));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1418): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_SAIBCLK_SOURCE(RCC_SAIBlockBCLKSource));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1451): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_PLLSAI_DIVR_VALUE(RCC_PLLSAIDivR));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1486): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_TIMCLK_PRESCALER(RCC_TIMCLKPrescaler));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1529): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB1_CLOCK_PERIPH(RCC_AHB1Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1561): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB2_PERIPH(RCC_AHB2Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1589): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB3_PERIPH(RCC_AHB3Periph));  
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1641): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));  
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1686): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1728): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB1_RESET_PERIPH(RCC_AHB1Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1757): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB2_PERIPH(RCC_AHB2Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1782): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB3_PERIPH(RCC_AHB3Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1831): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1872): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB2_RESET_PERIPH(RCC_APB2Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1921): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB1_LPMODE_PERIPH(RCC_AHB1Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1953): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB2_PERIPH(RCC_AHB2Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(1981): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_AHB3_PERIPH(RCC_AHB3Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(2033): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB1_PERIPH(RCC_APB1Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(2078): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_APB2_PERIPH(RCC_APB2Periph));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(2102): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_LSE_MODE(Mode));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(2148): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_IT(RCC_IT));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(2189): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_FLAG(RCC_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(2252): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_GET_IT(RCC_IT));
+  ^
+../FWLIB/src/stm32f4xx_rcc.c(2284): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RCC_CLEAR_IT(RCC_IT));
+  ^
+53 warnings and 1 error generated.
+compiling stm32f4xx_rcc.c...
+../FWLIB/src/stm32f4xx_rng.c(56): warning: In file included from...
+../FWLIB/inc\stm32f4xx_rng.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_rng.c(56): warning: In file included from...
+../FWLIB/inc\stm32f4xx_rng.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_rng.c(56): warning: In file included from...
+../FWLIB/inc\stm32f4xx_rng.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_rng.c(117): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rng.c(270): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rng.c(297): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RNG_GET_FLAG(RNG_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_rng.c(329): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RNG_CLEAR_FLAG(RNG_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_rng.c(346): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RNG_GET_IT(RNG_IT));
+  ^
+../FWLIB/src/stm32f4xx_rng.c(375): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RNG_IT(RNG_IT));
+  ^
+11 warnings and 1 error generated.
+compiling stm32f4xx_rng.c...
+../FWLIB/src/stm32f4xx_rtc.c(285): warning: In file included from...
+../FWLIB/inc\stm32f4xx_rtc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_rtc.c(285): warning: In file included from...
+../FWLIB/inc\stm32f4xx_rtc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_rtc.c(285): warning: In file included from...
+../FWLIB/inc\stm32f4xx_rtc.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_rtc.c(462): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_HOUR_FORMAT(RTC_InitStruct->RTC_HourFormat));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(528): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(667): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(713): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(771): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_FORMAT(RTC_Format));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(892): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_FORMAT(RTC_Format));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(951): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_FORMAT(RTC_Format));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1060): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_FORMAT(RTC_Format));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1120): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_FORMAT(RTC_Format));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1261): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_FORMAT(RTC_Format));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1275): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  RTC_AlarmStruct->RTC_AlarmTime.RTC_Hours = (uint32_t)((tmpreg & (RTC_ALRMAR_HT | \
+                                           ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_rtc.c(1277): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  RTC_AlarmStruct->RTC_AlarmTime.RTC_Minutes = (uint32_t)((tmpreg & (RTC_ALRMAR_MNT | \
+                                             ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_rtc.c(1279): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  RTC_AlarmStruct->RTC_AlarmTime.RTC_Seconds = (uint32_t)(tmpreg & (RTC_ALRMAR_ST | \
+                                             ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_rtc.c(1281): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  RTC_AlarmStruct->RTC_AlarmTime.RTC_H12 = (uint32_t)((tmpreg & RTC_ALRMAR_PM) >> 16);
+                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_rtc.c(1282): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  RTC_AlarmStruct->RTC_AlarmDateWeekDay = (uint32_t)((tmpreg & (RTC_ALRMAR_DT | RTC_ALRMAR_DU)) >> 24);
+                                        ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_rtc.c(1317): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_CMD_ALARM(RTC_Alarm));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1409): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_ALARM(RTC_Alarm));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1497): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_WAKEUP_CLOCK(RTC_WakeUpClock));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1524): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_WAKEUP_COUNTER(RTC_WakeUpCounter));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1561): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1634): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_DAYLIGHT_SAVING(RTC_DayLightSaving));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1700): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_OUTPUT(RTC_Output));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1756): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_CALIB_SIGN(RTC_CalibSign));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1797): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1841): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1873): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_CALIB_OUTPUT(RTC_CalibOutput));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1914): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_SMOOTH_CALIB_PERIOD(RTC_SmoothCalibPeriod));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(1987): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_TIMESTAMP_EDGE(RTC_TimeStampEdge));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2032): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_FORMAT(RTC_Format));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2108): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_TAMPER(RTC_Tamper)); 
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2134): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_TAMPER(RTC_Tamper));  
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2165): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_TAMPER_FILTER(RTC_TamperFilter));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2199): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_TAMPER_SAMPLING_FREQ(RTC_TamperSamplingFreq));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2222): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_TAMPER_PRECHARGE_DURATION(RTC_TamperPrechargeDuration));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2242): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2265): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2308): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_BKP(RTC_BKP_DR));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2329): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_BKP(RTC_BKP_DR));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2366): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_TAMPER_PIN(RTC_TamperPin));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2383): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_TIMESTAMP_PIN(RTC_TimeStampPin));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2402): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_OUTPUT_TYPE(RTC_OutputType));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2443): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_SHIFT_ADD1S(RTC_ShiftAdd1S));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2560): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_CONFIG_IT(RTC_IT));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2611): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_GET_FLAG(RTC_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2644): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_CLEAR_FLAG(RTC_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2667): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_GET_IT(RTC_IT));
+  ^
+../FWLIB/src/stm32f4xx_rtc.c(2706): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_RTC_CLEAR_IT(RTC_IT));
+  ^
+52 warnings and 1 error generated.
+compiling stm32f4xx_rtc.c...
+../FWLIB/src/stm32f4xx_sai.c(126): warning: In file included from...
+../FWLIB/inc\stm32f4xx_sai.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_sai.c(126): warning: In file included from...
+../FWLIB/inc\stm32f4xx_sai.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_sai.c(126): warning: In file included from...
+../FWLIB/inc\stm32f4xx_sai.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_sai.c(185): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_PERIPH(SAIx));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(210): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(277): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(325): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(435): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(464): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(461): warning: unused parameter 'SAI_Mono_StreoMode' [-Wunused-parameter]
+void SAI_MonoModeConfig(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_Mono_StreoMode)
+                                                                 ^
+../FWLIB/src/stm32f4xx_sai.c(487): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(515): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(539): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(570): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(592): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(615): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(657): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(673): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(705): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(849): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(884): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(925): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(953): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(997): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(1021): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+../FWLIB/src/stm32f4xx_sai.c(1054): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+  ^
+28 warnings and 1 error generated.
+compiling stm32f4xx_sai.c...
+../FWLIB/src/stm32f4xx_sdio.c(156): warning: In file included from...
+../FWLIB/inc\stm32f4xx_sdio.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_sdio.c(156): warning: In file included from...
+../FWLIB/inc\stm32f4xx_sdio.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_sdio.c(156): warning: In file included from...
+../FWLIB/inc\stm32f4xx_sdio.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_sdio.c(284): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_CLOCK_EDGE(SDIO_InitStruct->SDIO_ClockEdge));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(337): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(353): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_POWER_STATE(SDIO_PowerState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(404): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_CMD_INDEX(SDIO_CmdInitStruct->SDIO_CmdIndex));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(470): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_RESP(SDIO_RESP));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(508): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_DATA_LENGTH(SDIO_DataInitStruct->SDIO_DataLength));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(622): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(636): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(652): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_READWAIT_MODE(SDIO_ReadWaitMode));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(666): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(680): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(712): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(726): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(740): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(772): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(830): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_IT(SDIO_IT));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(880): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_FLAG(SDIO_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(915): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_CLEAR_FLAG(SDIO_FLAG));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(956): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_GET_IT(SDIO_IT));
+  ^
+../FWLIB/src/stm32f4xx_sdio.c(990): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SDIO_CLEAR_IT(SDIO_IT));
+  ^
+25 warnings and 1 error generated.
+compiling stm32f4xx_sdio.c...
+../FWLIB/src/stm32f4xx_spi.c(159): warning: In file included from...
+../FWLIB/inc\stm32f4xx_spi.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_spi.c(159): warning: In file included from...
+../FWLIB/inc\stm32f4xx_spi.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_spi.c(159): warning: In file included from...
+../FWLIB/inc\stm32f4xx_spi.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_spi.c(227): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(289): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(357): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_23_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(547): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(572): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_23_PERIPH_EXT(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(599): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(619): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(645): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(669): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(700): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(739): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_I2S_EXT_PERIPH(I2Sxext));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(811): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(827): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(917): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(939): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(958): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(982): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(1019): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(1129): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(1137): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = (uint16_t)1 << (uint16_t)itpos;
+         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_spi.c(1172): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(1212): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(1240): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(1244): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_spi.c(1250): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = 0x01 << itmask;
+         ~ ~~~~~^~~~~~~~~
+../FWLIB/src/stm32f4xx_spi.c(1293): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+  ^
+../FWLIB/src/stm32f4xx_spi.c(1297): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+32 warnings and 1 error generated.
+compiling stm32f4xx_spi.c...
+../FWLIB/src/stm32f4xx_syscfg.c(50): warning: In file included from...
+../FWLIB/inc\stm32f4xx_syscfg.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_syscfg.c(50): warning: In file included from...
+../FWLIB/inc\stm32f4xx_syscfg.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_syscfg.c(50): warning: In file included from...
+../FWLIB/inc\stm32f4xx_syscfg.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_syscfg.c(121): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SYSCFG_MEMORY_REMAP_CONFING(SYSCFG_MemoryRemap));
+  ^
+../FWLIB/src/stm32f4xx_syscfg.c(142): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+../FWLIB/src/stm32f4xx_syscfg.c(167): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_EXTI_PORT_SOURCE(EXTI_PortSourceGPIOx));
+  ^
+../FWLIB/src/stm32f4xx_syscfg.c(185): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_SYSCFG_ETH_MEDIA_INTERFACE(SYSCFG_ETH_MediaInterface)); 
+  ^
+../FWLIB/src/stm32f4xx_syscfg.c(203): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_FUNCTIONAL_STATE(NewState));
+  ^
+10 warnings and 1 error generated.
+compiling stm32f4xx_syscfg.c...
+../FWLIB/src/stm32f4xx_tim.c(119): warning: In file included from...
+../FWLIB/inc\stm32f4xx_tim.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_tim.c(119): warning: In file included from...
+../FWLIB/inc\stm32f4xx_tim.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_tim.c(119): warning: In file included from...
+../FWLIB/inc\stm32f4xx_tim.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_tim.c(203): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(293): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(363): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(388): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(412): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+   assert_param(IS_TIM_ALL_PERIPH(TIMx));
+   ^
+../FWLIB/src/stm32f4xx_tim.c(427): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(441): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(455): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(471): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(500): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(525): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(552): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(575): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(595): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(678): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(759): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(840): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(920): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1020): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1027): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp1 = CCER_CCE_SET << (uint16_t)TIM_Channel;
+       ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_tim.c(1063): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1079): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1094): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1109): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1129): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1158): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1186): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1215): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1243): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1273): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1302): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1331): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1360): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1391): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1421): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1451): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1481): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1511): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1540): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1569): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1598): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1624): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1652): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1679): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1706): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1733): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1760): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1791): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1795): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCE_SET << TIM_Channel;
+      ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_tim.c(1821): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1825): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCNE_SET << TIM_Channel;
+      ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+../FWLIB/src/stm32f4xx_tim.c(1903): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(1981): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2035): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2050): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2064): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2078): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2098): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2123): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2147): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2171): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2224): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2236): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+             TIM_BDTRInitStruct->TIM_Break | TIM_BDTRInitStruct->TIM_BreakPolarity |
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+../FWLIB/src/stm32f4xx_tim.c(2268): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2293): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2318): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST4_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2375): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2413): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2447): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2488): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2518): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2557): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_ALL_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2594): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2621): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST5_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2647): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2686): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2707): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2738): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2780): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2825): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2897): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST1_PERIPH(TIMx)); 
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2938): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST5_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2962): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(2985): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(3018): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST3_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(3078): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(3125): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST2_PERIPH(TIMx));
+  ^
+../FWLIB/src/stm32f4xx_tim.c(3176): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_TIM_LIST6_PERIPH(TIMx));
+  ^
+93 warnings and 1 error generated.
+compiling stm32f4xx_tim.c...
+../FWLIB/src/stm32f4xx_usart.c(92): warning: In file included from...
+../FWLIB/inc\stm32f4xx_usart.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_usart.c(92): warning: In file included from...
+../FWLIB/inc\stm32f4xx_usart.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_usart.c(92): warning: In file included from...
+../FWLIB/inc\stm32f4xx_usart.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_usart.c(190): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(254): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(383): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_1236_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(430): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(456): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(477): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(503): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(560): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(576): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(628): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(648): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(675): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(744): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(762): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(786): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(839): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(923): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_1236_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(942): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_1236_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(967): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_1236_PERIPH(USARTx)); 
+  ^
+../FWLIB/src/stm32f4xx_usart.c(1038): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(1056): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(1102): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(1236): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(1299): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(1347): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(1383): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(1456): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_USART_ALL_PERIPH(USARTx));
+  ^
+../FWLIB/src/stm32f4xx_usart.c(1466): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = ((uint16_t)0x01 << (uint16_t)bitpos);
+         ~  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+33 warnings and 1 error generated.
+compiling stm32f4xx_usart.c...
+../FWLIB/src/stm32f4xx_wwdg.c(84): warning: In file included from...
+../FWLIB/inc\stm32f4xx_wwdg.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(169): warning: In file included from...
+../Core\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(515): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(538): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   return(result);
+   ~~~~~~ ^~~~~~
+../Core\core_cmInstr.h(667): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_wwdg.c(84): warning: In file included from...
+../FWLIB/inc\stm32f4xx_wwdg.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(170): warning: In file included from...
+../Core\core_cmFunc.h(614): error: unknown register name 'vfpcc' in asm
+  __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+                                                     ^
+../FWLIB/src/stm32f4xx_wwdg.c(84): warning: In file included from...
+../FWLIB/inc\stm32f4xx_wwdg.h(38): warning: In file included from...
+../User\stm32f4xx.h(470): warning: In file included from...
+../Core\core_cm4.h(171): warning: In file included from...
+../Core\core_cm4_simd.h(648): warning: implicit conversion changes signedness: 'int32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+ return(result);
+ ~~~~~~ ^~~~~~
+../FWLIB/src/stm32f4xx_wwdg.c(158): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_WWDG_PRESCALER(WWDG_Prescaler));
+  ^
+../FWLIB/src/stm32f4xx_wwdg.c(178): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_WWDG_WINDOW_VALUE(WindowValue));
+  ^
+../FWLIB/src/stm32f4xx_wwdg.c(211): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_WWDG_COUNTER(Counter));
+  ^
+../FWLIB/src/stm32f4xx_wwdg.c(242): warning: implicit declaration of function 'assert_param' is invalid in C99 [-Wimplicit-function-declaration]
+  assert_param(IS_WWDG_COUNTER(Counter));
+  ^
+9 warnings and 1 error generated.
+compiling stm32f4xx_wwdg.c...
+".\Objects\template.axf" - 39 Error(s), 759 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Zeeeen1126\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
